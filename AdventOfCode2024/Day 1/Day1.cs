@@ -13,4 +13,17 @@ public static class Day1
             (t, i) => Math.Abs(t - list2[i])
             ).Sum();
     }
+
+    public static int GetSimilarityScore(List<int> list1, List<int> list2)
+    {
+        var score = 0;
+        var groupedList2 = list2.GroupBy(x => x);
+
+        foreach (var t in list1)
+        {
+            score += t * groupedList2.FirstOrDefault(x => x.Key ==  t)?.Count() ?? 0;
+        }
+        
+        return score;
+    }
 }

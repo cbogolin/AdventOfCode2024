@@ -8,3 +8,4 @@ var sortedList1 = Day1.SortList(Inputs.List1);
 var sortedList2 = Day1.SortList(Inputs.List2);
 
 Console.WriteLine($"GetTotalDiffs() = {Day1.GetTotalDiffs(sortedList1, sortedList2)}");
+Console.WriteLine($"GetSimilarityScore() = {Day1.GetSimilarityScore(sortedList2, sortedList1)}");
