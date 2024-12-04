@@ -17,7 +17,7 @@ public static class Day1
     public static int GetSimilarityScore(List<int> list1, List<int> list2)
     {
         var score = 0;
-        var groupedList2 = list2.GroupBy(x => x);
+        var groupedList2 = list2.GroupBy(x => x).ToList();
 
         foreach (var t in list1)
         {
