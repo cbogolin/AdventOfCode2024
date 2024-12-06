@@ -11,15 +11,15 @@ public class Day2 : AdventDayBase
         Console.WriteLine($"SafeReports: {safeReports}");
     }
 
-    private int GetCountOfSafeReports(List<int[]> list)
+    private static int GetCountOfSafeReports(List<int[]> list)
     {
-        return list.Count(report => IsReportSafe(report));
+        return list.Count(IsReportSafe);
     }
 
-    private bool IsReportSafe(int[] report)
+    private static bool IsReportSafe(int[] report)
     {
         bool? valueIncreasing = null;
-        for (int i = 0; i < report.Length - 1; i++)
+        for (var i = 0; i < report.Length - 1; i++)
         {
             //check if numbers change
             if (report[i] == report[i + 1])
