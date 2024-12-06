@@ -4,7 +4,7 @@ using AdventOfCode2024;
 using AdventOfCode2024.Day_1;
 using AdventOfCode2024.Day_2;
 
-const AdventDay currentDay = AdventDay.Day1;
+const AdventDay currentDay = AdventDay.Day2;
 
 Console.WriteLine("Hello, World!");
 Console.WriteLine($"Day {currentDay}:");
