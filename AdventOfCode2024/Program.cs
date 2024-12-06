@@ -1,26 +1,32 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using AdventOfCode2024;
 using AdventOfCode2024.Day_1;
+using AdventOfCode2024.Day_2;
 
 const AdventDay currentDay = AdventDay.Day1;
 
 Console.WriteLine("Hello, World!");
+Console.WriteLine($"Day {currentDay}:");
 
 switch (currentDay)
 {
     case AdventDay.Day1:
     {
-        Day1.Run();
+        var day = new Day1();
+        day.Run();
         break;
     }
     case AdventDay.Day2:
     {
-        //Day2.Run();
+        var day = new Day2();
+        day.Run();
         break;
     }
     default:
         break;
 }
+
 
 internal enum AdventDay
 {

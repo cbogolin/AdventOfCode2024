@@ -1,8 +1,8 @@
 ﻿namespace AdventOfCode2024.Day_1;
 
-public static class Day1
+public class Day1 : AdventDayBase
 {
-    public static void Run()
+    public override void Run()
     {
         var sortedList1 = SortList(Inputs.List1);
         var sortedList2 = SortList(Inputs.List2);
